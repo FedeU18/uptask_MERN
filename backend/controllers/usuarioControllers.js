@@ -20,4 +20,8 @@ const registrar = async (req, res) => {
   }
 };
 
-export { registrar };
+const autenticar = async () => {
+  res.json({ msg: "Autenticando usuario" });
+};
+
+export { registrar, autenticar };
