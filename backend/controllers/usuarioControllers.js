@@ -49,4 +49,9 @@ const autenticar = async (req, res) => {
   }
 };
 
-export { registrar, autenticar };
+const confirmar = async (req, res) => {
+  const { token } = req.params;
+  res.send("todo funciona joya");
+};
+
+export { registrar, autenticar, confirmar };
